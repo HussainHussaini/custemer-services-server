@@ -35,7 +35,7 @@ app.use(
 );
 
 mongoose
-.connect(process.env.CONNECTION_URL)
+.connect(`mongodb+srv://Hussain:Hussain123@cluster0.s4asfyg.mongodb.net/events-react-dev?retryWrites=true&w=majority`)
   .then(() => {
     app.listen(process.env.PORT || 8000);
   })
